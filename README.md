@@ -96,28 +96,3 @@ The `restore` script is responsible for restoring individual files back to their
 
 6. `.restore.info` Updates:
    - After successfully restoring the file, the entry in the `.restore.info` file should be deleted.
-
-
-## Instructions for User
-
-To use the recycle and restore scripts, follow these instructions:
-
-1. Clone or download the project from the GitHub repository.
-
-2. Ensure that you have the required permissions to execute the scripts.
-
-3. Place the `recycle` and `restore` scripts in a directory of your choice.
-
-4. Open a terminal and navigate to the directory where the scripts are located.
-
-5. To recycle a file, execute the `recycle` script followed by the filename as a comman line argument. For example:
-   ```
-   bash recycle filename
-   ```
-
-6. To restore a file, execute the `restore` script followed by the name of the file in the recycle bin as a command line argument. For example:
-   ```
-   bash restore filename_inode
-   ```
-
-7. The restore script will prompt you to confirm if you want to overwrite the existing file, if applicable. Respond with 'y' or 'Y' for confirmation, or any other response to cancel.
